@@ -17,5 +17,7 @@
     <string name="settings">Parametres</string>
     <string name="swipe">Swipe</string>
     <string name="time_left">Temps restant : %d</string>
+    <string name="score">Score : %d</string>
+    <string name="tap_type">%s</string>
     <string name="start">Commencer !</string>
 </resources>
