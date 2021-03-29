@@ -10,4 +10,12 @@
     <string name="create_player_validate">Valider</string>
     <string name="location_lat_lng">Lat : %.2f Lon : %.2f</string>
     <string name="display_player_title">Liste de joueurs</string>
+
+    <string name="drag_n_drop">Drag n Drop</string>
+    <string name="fast_tap">Fast tap</string>
+    <string name="ipac_fragment">Ipac</string>
+    <string name="settings">Parametres</string>
+    <string name="swipe">Swipe</string>
+    <string name="time_left">Temps restant : %d</string>
+    <string name="start">Commencer !</string>
 </resources>
