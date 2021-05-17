@@ -16,7 +16,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.multigame.R;
 import com.example.multigame.activity.ResumeActivity;
+import com.example.multigame.dao.AppDatabase;
 import com.example.multigame.databinding.FragmentFastTapGameBinding;
+import com.example.multigame.manager.PlayerManager;
+import com.example.multigame.model.Player;
 import com.example.multigame.utils.ActivityUtils;
 
 public class FastTapGameFragment extends Fragment {
@@ -94,6 +97,12 @@ public class FastTapGameFragment extends Fragment {
                 binding.timeLeft.setText("done!");
                 binding.gameContainer.setOnLongClickListener(null);
                 binding.gameContainer.setOnClickListener(null);
+
+                Player player = PlayerManager.getInstance().getPlayer();
+                if (player.getTapScore() < currentScore){
+                    player.setTapScore(currentScore);
+                    AppDatabase.getDatabase(getContext()).appDao().insert(player);
+                }
 
                 //TODO: lunch resume game page
                 Intent intent = new Intent(getActivity(), ResumeActivity.class);

@@ -14,6 +14,9 @@ public class Player {
     private String firstName;
     private int age;
     private String localisation;
+    private int dragScore;
+    private int tapScore;
+    private int swipeScore;
 
     public Player(String picture, String name, String firstName, int age, String localisation){
         setPicture(picture);
@@ -21,6 +24,9 @@ public class Player {
         setFirstName(firstName);
         setAge(age);
         setLocalisation(localisation);
+        setDragScore(0);
+        setSwipeScore(0);
+        setTapScore(0);
     }
 
     public String getPicture() {
@@ -62,4 +68,16 @@ public class Player {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public void setDragScore(int score) {this.dragScore = score;}
+
+    public int getDragScore(){return this.dragScore;}
+
+    public void setTapScore(int score) {this.tapScore = score;}
+
+    public int getTapScore(){return this.tapScore;}
+
+    public void setSwipeScore(int score) {this.swipeScore = score;}
+
+    public int getSwipeScore(){return this.swipeScore;}
 }

@@ -3,20 +3,21 @@
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fast_tap_main_container"
+        android:id="@+id/start_game_main_container"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/game_name_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="fast tap"
+            android:text=""
             android:textAlignment="center"
             android:layout_marginTop="50dp"
             android:textColor="@color/purple_700"
             android:textSize="60sp" />
 
         <Button
-            android:id="@+id/fast_tap_start"
+            android:id="@+id/game_start_button"
             android:layout_width="wrap_content"
             android:stateListAnimator="@null"
             android:layout_centerInParent="true"

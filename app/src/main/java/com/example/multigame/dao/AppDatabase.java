@@ -11,7 +11,7 @@ import com.example.multigame.model.Player;
 @Database(entities = {Player.class}, version = AppDatabase.DATABASE_VERSION, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     public static final String DATABASE_NAME = "myDbb";
 
     public abstract PlayerDao appDao();

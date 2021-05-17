@@ -11,6 +11,7 @@
     <string name="location_lat_lng">Lat : %.2f Lon : %.2f</string>
     <string name="display_player_title">Liste de joueurs</string>
 
+
     <string name="drag_n_drop">Drag n Drop</string>
     <string name="fast_tap">Fast tap</string>
     <string name="ipac_fragment">Ipac</string>
